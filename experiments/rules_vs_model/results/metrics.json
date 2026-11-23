@@ -1,0 +1,166 @@
+{
+  "frames": 7500,
+  "test_frames": 7500,
+  "sessions": [
+    "haseeb/s1",
+    "haseeb/s2",
+    "haseeb/s3"
+  ],
+  "people": [
+    "haseeb"
+  ],
+  "conditions": [
+    "far",
+    "normal",
+    "normal2"
+  ],
+  "frames_per_class": {
+    "thumb": 1500,
+    "index": 1500,
+    "middle": 1500,
+    "pinky": 1500,
+    "none": 1500
+  },
+  "split": "leave-one-session-out over 3 sessions",
+  "metrics": {
+    "rules": {
+      "accuracy": 0.7582666666666666,
+      "macro_f1": 0.6866079220662622,
+      "recall_per_class": {
+        "thumb": 0.9866666666666667,
+        "index": 0.998,
+        "middle": 0.8,
+        "pinky": 0.9993333333333333,
+        "none": 0.007333333333333333
+      }
+    },
+    "logistic_regression": {
+      "accuracy": 0.9252,
+      "macro_f1": 0.9250364831666079,
+      "recall_per_class": {
+        "thumb": 0.828,
+        "index": 0.9946666666666667,
+        "middle": 0.8973333333333333,
+        "pinky": 0.9646666666666667,
+        "none": 0.9413333333333334
+      }
+    },
+    "k_nearest_neighbours": {
+      "accuracy": 0.8417333333333333,
+      "macro_f1": 0.8422516773771453,
+      "recall_per_class": {
+        "thumb": 0.8846666666666667,
+        "index": 0.8386666666666667,
+        "middle": 0.868,
+        "pinky": 0.9706666666666667,
+        "none": 0.6466666666666666
+      }
+    },
+    "random_forest": {
+      "accuracy": 0.9252,
+      "macro_f1": 0.9256808015688074,
+      "recall_per_class": {
+        "thumb": 0.922,
+        "index": 0.9713333333333334,
+        "middle": 0.912,
+        "pinky": 0.9826666666666667,
+        "none": 0.838
+      }
+    }
+  },
+  "accuracy_per_fold": {
+    "rules": {
+      "haseeb/s1": 0.7491111111111111,
+      "haseeb/s2": 0.744,
+      "haseeb/s3": 0.8
+    },
+    "logistic_regression": {
+      "haseeb/s1": 0.9642222222222222,
+      "haseeb/s2": 0.892,
+      "haseeb/s3": 0.8413333333333334
+    },
+    "k_nearest_neighbours": {
+      "haseeb/s1": 0.8495555555555555,
+      "haseeb/s2": 0.8186666666666667,
+      "haseeb/s3": 0.8413333333333334
+    },
+    "random_forest": {
+      "haseeb/s1": 0.9293333333333333,
+      "haseeb/s2": 0.938,
+      "haseeb/s3": 0.9
+    }
+  },
+  "mean_session_accuracy": {
+    "rules": 0.7643703703703704,
+    "logistic_regression": 0.8991851851851852,
+    "k_nearest_neighbours": 0.8365185185185186,
+    "random_forest": 0.9224444444444444
+  },
+  "accuracy_per_condition": {
+    "rules": {
+      "far": 0.7853333333333333,
+      "normal": 0.7606666666666667,
+      "normal2": 0.724
+    },
+    "logistic_regression": {
+      "far": 0.984,
+      "normal": 0.8888888888888888,
+      "normal2": 0.9753333333333334
+    },
+    "k_nearest_neighbours": {
+      "far": 0.87,
+      "normal": 0.8557777777777777,
+      "normal2": 0.7713333333333333
+    },
+    "random_forest": {
+      "far": 0.9853333333333333,
+      "normal": 0.9228888888888889,
+      "normal2": 0.872
+    }
+  },
+  "ms_per_frame": {
+    "rules": 0.043474062491441146,
+    "logistic_regression": 0.26753504149382934,
+    "k_nearest_neighbours": 1.4240798955142964,
+    "random_forest": 10.211776124982862
+  },
+  "rules_half_outputs": 1,
+  "learning_curve_logistic_regression": [
+    {
+      "fraction": 0.01,
+      "train_frames": 50,
+      "accuracy": 0.8128148148148148
+    },
+    {
+      "fraction": 0.02,
+      "train_frames": 100,
+      "accuracy": 0.8982962962962963
+    },
+    {
+      "fraction": 0.05,
+      "train_frames": 250,
+      "accuracy": 0.8899259259259259
+    },
+    {
+      "fraction": 0.1,
+      "train_frames": 500,
+      "accuracy": 0.9179259259259259
+    },
+    {
+      "fraction": 0.25,
+      "train_frames": 1250,
+      "accuracy": 0.9042222222222221
+    },
+    {
+      "fraction": 0.5,
+      "train_frames": 2500,
+      "accuracy": 0.9029629629629631
+    },
+    {
+      "fraction": 1.0,
+      "train_frames": 5000,
+      "accuracy": 0.8991851851851852
+    }
+  ],
+  "seed": 0
+}

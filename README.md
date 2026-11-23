@@ -83,6 +83,14 @@ Press `q` in the camera window to stop mode 1.
 - Testing was functional: each gesture was shown to the camera and the expected action was checked in Unity.
 - Mode 1 works on Windows only.
 
+## Follow-up experiment (November 2026)
+
+The limits above say the rules were never measured. In November 2026 I measured them against small trained
+classifiers on 7,500 recorded frames, each method tested on a session it had not seen: the rules recognised 76% of
+gestures, a random forest 92%. The rules are reliable for the thumb, index and little finger but almost never
+recognise a closed fist. Code, data and a two-page report: [`experiments/rules_vs_model`](experiments/rules_vs_model).
+This follow-up is not part of the graded 2024 project.
+
 ## Credits
 
 - [MediaPipe Hands](https://arxiv.org/abs/2006.10214) (Zhang et al., 2020) for hand landmark detection.
